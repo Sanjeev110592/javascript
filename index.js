@@ -22,8 +22,13 @@ function divisibleBy3(num){
 
 var array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] ;
 
+// Higher order function.
 var filter = function(array,func){
+
+    // Empty array.
     var filteredArray = [] ;
+
+    // Loop.   
     for(var nums of array){
         if(func(nums)){
             filteredArray.push(nums) ;
@@ -31,6 +36,8 @@ var filter = function(array,func){
     }
     return filteredArray
 }
+
+// Invoking function.
 console.log(filter(array,checkEven)) ;
 console.log(filter(array,checkOdd)) ;
 console.log(filter(array,divisibleBy5)) ;
