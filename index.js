@@ -1,15 +1,20 @@
+// Checking Even numbers.
+
 function checkEven(num){
     return num%2===0 ;
 }
 
+// Checking Odd numbers.
 function checkOdd(num){
     return num%2!==0 ;
 }
 
+// Checking numbers divisibleBy5.
 function divisibleBy5(num){
     return num%5===0 ;
 }
 
+// Checking numbers divisibleBy3.
 function divisibleBy3(num){
     return num%3===0 ;
 }
